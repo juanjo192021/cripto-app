@@ -10,6 +10,6 @@ export interface Data {
 }
 
 export interface PrediccionAdicional {
-  fecha: Date;
+  fecha: string;
   valor: number;
 }

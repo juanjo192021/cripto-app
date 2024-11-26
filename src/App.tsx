@@ -39,13 +39,19 @@ function App() {
           {loading ? (
             <div>Cargando...</div>
           ) : (
-            <div style={{ width: "100%", height: "500px" }}>
-              {data?.data.resultados && (
-                <AreaRange
-                  data={data.data.resultados as [number, number, number][]}
-                />
-              )}
-            </div>
+            <>
+              <div className="flex gap-x-2">
+                <span>{`La prediccion para el ${data?.data?.prediccion_adicional?.fecha || ""} es de:`}</span>
+                <span>{data?.data?.prediccion_adicional?.valor}</span>
+              </div>
+              <div style={{ width: "100%", height: "500px" }}>
+                {data?.data.resultados && (
+                  <AreaRange
+                    data={data.data.resultados as [number, number, number][]}
+                  />
+                )}
+              </div>
+            </>
           )}
         </div>
       </section>
