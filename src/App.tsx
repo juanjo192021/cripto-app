@@ -22,7 +22,7 @@ function App() {
       <section className="h-screen px-7">
         <div className="container py-3">
           <div className="pb-[10px] ms-1">
-            <h1 className="text-2xl lg:text-4xl font-bold dark:text-gray-900 text-white">CriptoApp 🪙🤑💸💰</h1>
+            <h1 className="text-2xl lg:text-4xl font-bold dark:text-gray-900 text-black">CriptoApp 🪙🤑💸💰</h1>
           </div>
           <div className="flex flex-col ms-1 py-[10px]">
             <label htmlFor="tricker" className="block mb-4 text-sm font-medium dark:text-gray-900 text-white">Selecciona una criptomoneda para ver su predicción </label>
