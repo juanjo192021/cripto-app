@@ -25,7 +25,7 @@ function App() {
             <h1 className="text-2xl lg:text-4xl font-bold dark:text-gray-900 text-black">CriptoApp 🪙🤑💸💰</h1>
           </div>
           <div className="flex flex-col ms-1 py-[10px]">
-            <label htmlFor="tricker" className="block mb-4 text-sm font-medium dark:text-gray-900 text-white">Selecciona una criptomoneda para ver su predicción </label>
+            <label htmlFor="tricker" className="block mb-4 text-sm font-medium dark:text-gray-900 text-black">Selecciona una criptomoneda para ver su predicción </label>
             <select
               name="tricker"
               id="tricker"
@@ -64,8 +64,8 @@ function App() {
           ) : (
             <>
               <div className="flex gap-x-2 ms-1 py-[10px]">
-                <span className="block text-sm font-medium dark:text-gray-900 text-white">{`La prediccion para el ${data?.data?.prediccion_adicional?.fecha || ""} es de:`}</span>
-                <span className="block text-sm font-medium dark:text-gray-900 text-white">$ {data?.data?.prediccion_adicional?.valor}</span>
+                <span className="block text-sm font-medium dark:text-gray-900 text-black">{`La prediccion para el ${data?.data?.prediccion_adicional?.fecha || ""} es de:`}</span>
+                <span className="block text-sm font-medium dark:text-gray-900 text-black">$ {data?.data?.prediccion_adicional?.valor}</span>
               </div>
               <div className="w-full h-full border border-black rounded-xl p-2">
                 {data?.data.resultados && (
